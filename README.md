@@ -1,7 +1,6 @@
 
 *******************************
 *********** PHP MVC ***********
-******************************* 
 *** Created by Neshat Ademi ***
 *******************************
 
@@ -27,4 +26,4 @@
 
 9. Admin for the CMS Panel: 
 username: admin@admin.com   
-password: test12345
+password: test12345 
