@@ -21,5 +21,4 @@
 8. For the users front Page follow the steps 2,4,5,6,7
 
 9. Admin for the CMS Panel: 
-username: admin@admin.com   
-password: test12345 
+username: admin@admin.com password: test12345 
