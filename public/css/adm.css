@@ -1,0 +1,361 @@
+/* W3C CSS Validator
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+
+a, a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+
+.card .card-body {
+  min-width: 195px !important;
+  min-height: 195px !important;
+}
+
+/* Right Sidebar active and hover */
+
+#rightSidebarNav ul a {
+  color: #223847c9;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+#rightSidebarNav ul a:hover {
+  color: #17a2b8;
+  border-bottom-color: #17a2b8;
+}
+
+#rightSidebarNav ul li.active>a {
+  color: #17a2b8;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #17a2b8;
+}
+
+#logout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* --------------------------------------------------- 
+    Edit Multiple Images 
+---------------------------------------------------*/
+
+#edit-images-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#edit-images-wrapper .single-img {
+  /* border: 1px solid #137d8e; */
+  margin-right: 1.2em;
+  margin-bottom: 1.2em;
+  position: relative;
+}
+
+#edit-images-wrapper .single-img a {
+  position: absolute;
+  right: -0.8em;
+  top: -0.8em;
+  color: #137d8e;
+}
+
+/* ---------------------------------------------------
+   Wrappers
+----------------------------------------------------- */
+
+#mainWrapper {
+  display: flex;
+  width: 100%;
+}
+
+#sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  background: #137d8e;
+  color: #fff;
+  transition: all 0.3s;
+  padding-bottom: 2em;
+  overflow-y: auto;
+}
+
+#contentWrapper {
+  width: calc(100% - 250px);
+  padding: 15px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#content {
+  padding: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#contentWrapper.active {
+  width: 100%;
+}
+
+/* ---------------------------------------------------
+    LEFT SIDEBAR
+----------------------------------------------------- */
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #17a2b8;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #17a2b8;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #17a2b8;
+  background: #fff;
+}
+
+#sidebar ul li.active>a, a[aria-expanded="true"] {
+  color: #fff;
+  background: #17a2b8;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #17a2b8;
+}
+
+ul.CTAs {
+  padding: 15px 0.5rem;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+a.logout {
+  background: #fff;
+  color: #17a2b8;
+}
+
+a.article, a.article:hover {
+  background: #17a2b8 !important;
+  color: #fff !important;
+}
+
+#adminMobileLogo {
+  display: none;
+}
+
+.author {
+  border-bottom: 1px solid #17a2b8;
+  margin-bottom: 1rem;
+  padding: 20px 0;
+}
+
+.author p {
+  font-size: 1rem;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #mainSidebarBtn {
+    display: none;
+  }
+  #adminMobileLogo {
+    display: block;
+  }
+  #contentWrapper {
+    width: 100%;
+  }
+  #contentWrapper.active {
+    width: calc(100% - 250px);
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  #rightSidebarNav ul li:first-child {
+    border-top: 2px solid #ddd;
+    margin-top: 25px;
+  }
+  #rightSidebarNav ul li {
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+  }
+  .navbar-brand {
+    padding-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* #rightSidebarNav ul a {
+    font-size: 16px;
+  } */
+}
+
+/* ---------------------------------------------------
+    FORMS
+----------------------------------------------------- */
+
+#login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin-top: -15px;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#formPages {
+  margin: 0 auto;
+}
+
+/* Categories */
+
+#formCategory {
+  margin: 0 auto;
+}
+
+/* Users */
+
+#formUser {
+  margin: 0 auto;
+}
+
+/* Input for multiple file upload */
+
+#demoImage {
+  height: auto;
+}
