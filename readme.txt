@@ -1,7 +1,7 @@
 - Steps to create a new Functionality in Admin Panel and Front Page
 ********************************************************************
 
-1. Import the database file "oop_portfolio" in your phpMyAdmin
+1. Import the database file "oop_portfolio_github.sql" in your phpMyAdmin
 
 2. Folder app/routes -> create a route file with routes
 
